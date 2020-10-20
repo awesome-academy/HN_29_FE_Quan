@@ -1,0 +1,23 @@
+mixin product(title,link,price,original)
+    a(href="#",title=title).product
+        img(src=link, alt="img")
+        h5.title= title
+        P.price= price
+            sup đ
+            span.original= original
+                sup đ
+        button.btn.btn-black(type="submit") ADD TO CART
+-
+    var links=[
+        '../img/gallery-img-1.png',
+        '../img/gallery-img-2.png',
+        '../img/gallery-img-3.png',
+        '../img/gallery-img-4.png',
+        '../img/gallery-img-5.png',
+        '../img/gallery-img-6.png',
+        '../img/gallery-img-7.png',
+        '../img/gallery-img-8.png',
+        ];
+mixin section-gallery
+    each link in links
+        img(src=link, alt="img")

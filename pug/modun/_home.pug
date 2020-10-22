@@ -1,0 +1,68 @@
+main.flex-column
+    section.section-intro.flex-column
+        .title
+            h1 GIỚI THIỆU
+            img(src="../img/title-icon.png", alt="img")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quisquam sint dolores debitis ad doloremque excepturi accusantium, laudantium cum totam laborum, aperiam perspiciatis quod omnis eveniet ipsum. Quidem ducimus animi minima amet, at dolor quos esse rem expedita omnis cum assumenda accusamus aliquid nobis aliquam nostrum odio est, repellat quas? Eius commodi hic quae maxime voluptatum quibusdam. Ipsam voluptas sit perspiciatis dolore dignissimos! Sequi, aspernatur saepe reprehenderit asperiores autem corporis quae nobis esse sapiente cum adipisci
+        button.btn-black.btn(type="submit") Xem thêm
+    section.section-sale.flex-column
+        .section-sale__content.flex-column
+            .wrapper.flex-row
+                img(src="../img/home-page-sale-product.png", alt="img")
+                #triangle-topleft
+                h5 sale
+                .product-detail.flex-column
+                    .title
+                        h1 Rượu nho năm 1987
+                        img(src="../img/arrow.png", alt="img")
+                    p 330000đ
+                    button.btn.btn-black(type="submit") ADD TO CART
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque dolores, illo culpa minima, tenetur, illum inventore accusantium quo ipsum ad. Natus nemo, consequuntur pariatur non amet nesciunt. Saepe facere quibusdam dignissimos unde iusto quasi molestiae consequuntur blanditiis sunt consequatur, cum libero. Porro nihil corporis maxime, expedita soluta ipsam praesentium!
+    section.section-latest
+        h1 SẢN PHẨM MỚI
+        img(src="../img/title-icon.png", alt="img")
+        .wrapper
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-1.jpg','370.000','480.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-2.jpg','350.000','500.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-3.jpg','370.000','480.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-4.jpg','350.000','500.000')
+    section.section-gallery
+        .wrapper
+            +section-gallery
+    section.section-bestSellers
+        h1 SẢN PHẨM BÁN CHẠY
+        img(src="../img/title-icon.png", alt="img")
+        .wrapper
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-1.jpg','370.000','480.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-2.jpg','350.000','500.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-3.jpg','370.000','480.000')
+            +product('RƯỢU VANG ĐÀ LẠT','../img/product-4.jpg','350.000','500.000')
+    section.section-news
+        .blog
+            h1 TIN TỨC VÀ BLOG
+            img(src="../img/title-icon.png", alt="img")
+            .wrapper
+                .news
+                    img(src="../img/blog-1.png", alt="img")
+                    h5.title VANG THĂNG LONG CLASSIC
+                    P.detail Đăng bởi Giang Lê|06/06/2016|60 bình luận
+                    p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+                    p.more Read more
+                .news
+                    img(src="../img/blog-2.png", alt="img")
+                    h5.title VANG THĂNG LONG CLASSIC
+                    P.detail Đăng bởi Giang Lê|06/06/2016|60 bình luận
+                    p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+                    p.more Read more
+        .customer.flex-column
+            .title
+                h1 KHÁCH HÀNG
+                img(src="../img/title-icon.png", alt="img")
+            .comtent
+                img(src="../img/customer-circle.png", alt="img")
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, obcaecati.
+                p Read more
+            img(src="../img/customer-avatar.png", alt="img")
+            .name
+                p GIANG LT
+                P Graphic Design

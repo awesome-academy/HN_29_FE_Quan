@@ -253,7 +253,48 @@ a.product {
 
 .brand {
   text-align: center; }
+  .brand img {
+    width: 80%; }
 
-.contact {
+.contacts {
+  width: 70%;
   display: grid;
   grid-template-columns: 16.66667% 16.66667% 33.33333% 33.33333%; }
+  .contacts .contact__1 ul,
+  .contacts .contact__2 ul {
+    list-style: none; }
+  .contacts .contact__1 a,
+  .contacts .contact__2 a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem; }
+  .contacts .contact__3 form {
+    display: flex;
+    align-items: center; }
+    .contacts .contact__3 form input {
+      height: 1.4rem;
+      border-radius: 0%;
+      border-color: grey;
+      border-width: 1px 0px 1px 1px; }
+    .contacts .contact__3 form button {
+      border: black;
+      background-color: black;
+      color: white;
+      padding: 0px 1rem;
+      height: 1.4rem; }
+    .contacts .contact__3 form .arrow-right {
+      width: 0;
+      height: 0;
+      border-top: 0.7rem solid transparent;
+      border-bottom: 0.7rem solid transparent;
+      border-left: 0.7rem solid black; }
+  .contacts .contact__3 a {
+    text-decoration: none;
+    color: grey;
+    margin: 0.4rem; }
+  .contacts .contact__4 ul {
+    list-style: none; }
+  .contacts .contact__4 a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem; }

@@ -1,11 +1,14 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 @import "sass/color";
 @import "sass/component";
 @import "sass/header";
 @import "sass/layout";
 @import "sass/home";
+@import "sass/detail";
+@import "sass/product-list";
+@import "sass/product-grid";
 @import "sass/footer";

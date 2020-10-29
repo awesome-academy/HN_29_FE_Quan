@@ -7,17 +7,50 @@ mixin product(title,link,price,original)
             span.original= original
                 sup đ
         button.btn.btn-black(type="submit") ADD TO CART
--
-    var links=[
-        '../img/gallery-img-1.png',
-        '../img/gallery-img-2.png',
-        '../img/gallery-img-3.png',
-        '../img/gallery-img-4.png',
-        '../img/gallery-img-5.png',
-        '../img/gallery-img-6.png',
-        '../img/gallery-img-7.png',
-        '../img/gallery-img-8.png',
-        ];
-mixin section-gallery
-    each link in links
+mixin product-list(title,link,price,original)
+    a(href="#",title=title).product-list__item
         img(src=link, alt="img")
+        .wrapper
+            h3.title= title
+            P.price= price
+                sup đ
+                span.original= original
+                    sup đ
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate, obcaecati expedita dignissimos quaerat fuga!Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, obcaecati. A quas beatae itaque doloribus?
+            button.btn.btn-black(type="submit") ADD TO CART
+            button.btn(type="submit")
+                i.fa.fa-heart(aria-hidden='true')
+                span Yêu thích
+            button.btn(type="submit")
+                i.fa.fa-bar-chart(aria-hidden='true')
+                span So sánh   
+mixin section-gallery
+    each link in gallery
+        img(src=link, alt="img")
+mixin pagination
+    .pagination
+        i.fa.fa-caret-left
+        a(href="#") 1
+        a(href="#") 2
+        a(href="#") 3
+        a(href="#") 4
+        a(href="#") 5
+        i.fa.fa-caret-right
+mixin side-bar
+    .side-bar
+        .title
+            h3 DANH MỤC SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        ul
+            each item in sideBar
+                li.list-item
+                    a(href="#")= item
+        .title
+            h3 SO SÁNH SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        P Bạn chưa có sản phẩm nào để so sánh
+        .title
+            h3 TAG SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        each item in tag
+            button= item

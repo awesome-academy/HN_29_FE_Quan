@@ -16,7 +16,7 @@
 .nav__link {
   text-decoration: none;
 }
-.navbar-top{
+.navbar-top {
   padding: 0.5rem 1rem;
 }
 .navbar-top .nav__link {
@@ -27,7 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  
+
   width: 100%;
 }
 .navbar-top {
@@ -37,42 +37,38 @@
   background-color: $color-1;
   justify-content: center;
   position: relative;
-  
-  
 }
 .navbar-main .nav__link {
   color: $color-2;
   font-family: Arial, Helvetica, sans-serif;
 }
-.navbar-main .nav__link:hover,.navbar-top .nav__link:hover {
+.navbar-main .nav__link:hover,
+.navbar-top .nav__link:hover {
   color: $color-4;
 }
-#dropdown--1:hover .dropdown-menu{
+#dropdown--1:hover .dropdown-menu {
   display: block;
 }
-.dropdown-menu{
-  display: none;
-  background-color: white;
-  position: absolute;
-  top:100%;
-  left:30%;
-  width: 60%;
-  padding: 1rem;
-  z-index: 1;
-  border: solid $color-4 1px;
-  .wrapper{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 40%;
-    .wrapper-item{
-      padding: 1rem;
-    }
-    img{
-      width: 100%;
-    }
-    a{
-      display: block;
-      text-decoration: none;
-      color: $color-3;
+#dropdown--1 {
+  .dropdown-menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 60%;
+    padding: 1rem;
+    z-index: 1;
+    border: solid $color-4 1px;
+    .wrapper {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 40%;
+      .wrapper-item {
+        padding: 1rem;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 }

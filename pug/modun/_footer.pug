@@ -6,13 +6,13 @@ footer.flex-column
             h4 THÔNG TIN
             ul
                 each item in footerContact_1
-                    li
+                    li.list-item
                         a(href="#")= item
         .contact__2
             h4 MUA HÀNG
             ul
                 each item in footerContact_2
-                    li
+                    li.list-item
                         a(href="#")= item
         .contact__3
             h4 GỬI EMAIL
@@ -28,6 +28,9 @@ footer.flex-column
             h4 LIÊN HỆ
             ul
                 each item in footerContact_4
-                    li
+                    li.list-item
                         i(class= item.icon)
                         a(href="#")= item.text
+    .payment
+        p @Copy right sdagfgdfgdf
+        img(src="../img/footer-payment.png", alt="")

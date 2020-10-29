@@ -1,22 +1,17 @@
 .brand {
   text-align: center;
-  img{
-      width: 80%;
+  img {
+    width: 80%;
   }
 }
 .contacts {
   width: 70%;
   display: grid;
   grid-template-columns: 2/12 * 100% 2/12 * 100% 4/12 * 100% 4/12 * 100%;
-
+  margin-bottom: 1rem;
   .contact__1,
   .contact__2 {
-    ul {
-      list-style: none;
-    }
     a {
-      text-decoration: none;
-      color: $color-3;
       font-size: 0.8rem;
     }
   }
@@ -53,13 +48,14 @@
     }
   }
   .contact__4 {
-    ul {
-      list-style: none;
-    }
     a {
-      text-decoration: none;
-      color: $color-3;
       font-size: 0.8rem;
     }
   }
+}
+.payment {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  color: $color-3;
 }

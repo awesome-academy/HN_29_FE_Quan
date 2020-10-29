@@ -77,32 +77,69 @@
         </ul>
       </nav>
     </header>
-    <main class="flex-column">
-      <section class="section-intro flex-column">
-        <div class="title">
-          <h1>GIỚI THIỆU</h1><img src="../img/title-icon.png" alt="img"/>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quisquam sint dolores debitis ad doloremque excepturi accusantium, laudantium cum totam laborum, aperiam perspiciatis quod omnis eveniet ipsum. Quidem ducimus animi minima amet, at dolor quos esse rem expedita omnis cum assumenda accusamus aliquid nobis aliquam nostrum odio est, repellat quas? Eius commodi hic quae maxime voluptatum quibusdam. Ipsam voluptas sit perspiciatis dolore dignissimos! Sequi, aspernatur saepe reprehenderit asperiores autem corporis quae nobis esse sapiente cum adipisci</p>
-        <button class="btn-black btn" type="submit">Xem thêm</button>
+    <main class="detail">
+      <section class="product-link">
+        <h5>Trang chủ/Sản phẩm/Rượu vang đỏ</h5>
       </section>
-      <section class="section-sale flex-column">
-        <div class="section-sale__content flex-column">
-          <div class="wrapper flex-row"><img src="../img/home-page-sale-product.png" alt="img"/>
-            <div id="triangle-topleft"></div>
-            <h5>sale</h5>
-            <div class="product-detail flex-column">
-              <div class="title">
-                <h1>Rượu nho năm 1987</h1><img src="../img/arrow.png" alt="img"/>
+      <section class="product-detail">
+        <div class="product-detail__wrapper-top">
+          <div class="product-detail__wrapper-top__thumbnail"><img src="../img/product-5.jpg" alt="img"/><img src="../img/product-6.jpg" alt="img"/><img src="../img/product-7.jpg" alt="img"/><img src="../img/product-8.jpg" alt="img"/><img src="../img/product-9.jpg" alt="img"/></div>
+          <div class="product-detail__wrapper-top__large-image"><img src="../img/product-detail-main-img.png" alt="img"/></div>
+          <div class="product-detail__wrapper-top__attribute">
+            <h1>RƯỢU NHO NĂM 1987</h1><img src="../img/arrow.png" alt="img"/>
+            <p class="price">330.000<sup>đ</sup></p>
+            <div class="rate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+              <hr/>
+            </div>
+            <div class="color">
+              <h3>MÀU SẮC </h3>
+              <div class="square-1"></div>
+              <div class="square-2"></div>
+              <div class="square-3"></div>
+            </div>
+            <div class="size">
+              <h3>KÍCH CỠ</h3>
+              <form>
+                <select id="size" name="size">
+                  <option value="big">Loại lớn</option>
+                  <option value="medium">Loại vừa</option>
+                  <option value="small">Loại nhỏ</option>
+                </select>
+              </form>
+            </div>
+            <div class="count">
+              <h3>SỐ LƯỢNG</h3>
+              <div class="wrapper"><i class="fa fa-plus" aria-hidden="true"></i>
+                <form action="">
+                  <input type="number" id="quantity" name="quantity" min="1"/>
+                </form><i class="fa fa-plus" aria-hidden="true"></i>
               </div>
-              <p>330000đ</p>
               <button class="btn btn-black" type="submit">ADD TO CART</button>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque dolores, illo culpa minima, tenetur, illum inventore accusantium quo ipsum ad. Natus nemo, consequuntur pariatur non amet nesciunt. Saepe facere quibusdam dignissimos unde iusto quasi molestiae consequuntur blanditiis sunt consequatur, cum libero. Porro nihil corporis maxime, expedita soluta ipsam praesentium!</p>
             </div>
+            <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích   </span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh   </span><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></div>
+            <div class="description">
+              <h3>MÔ TẢ</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fuga velit optio quo ducimus ratione!</p>
+            </div>
+            <div class="social"></div>
           </div>
         </div>
+        <div class="product-detail__wrapper-bottom">
+          <div class="content">
+            <ul class="title">
+              <li><a href="#">ĐẶC ĐIỂM NỔI BẬT</a></li>
+              <li><a href="#">THÔNG TIN SẢN PHẨM</a></li>
+              <li>   <a href="#">ĐÁNH GIÁ</a></li>
+            </ul>
+            <div class="text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere assumenda a voluptate possimus consequuntur, quisquam commodi asperiores fugiat ea accusamus.elit. Dolorum, porro quis quasi ducimus deleniti sapiente?</p>
+            </div>
+          </div>
+          <div class="image"><img src="../img/product-detail-content-img.png" alt="img"/></div>
+        </div>
       </section>
-      <section class="section-latest">
-        <h1>SẢN PHẨM MỚI</h1><img src="../img/title-icon.png" alt="img"/>
+      <section class="product-recommend">
+        <h1>SẢN PHẨM LIÊN QUAN</h1><img src="../img/title-icon.png" alt="img"/>
         <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-1.jpg" alt="img"/>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
@@ -116,59 +153,6 @@
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
                 <button class="btn btn-black" type="submit">ADD TO CART</button></a>
-        </div>
-      </section>
-      <section class="section-gallery">
-        <div class="wrapper"><img src="../img/gallery-img-1.png" alt="img"/><img src="../img/gallery-img-2.png" alt="img"/><img src="../img/gallery-img-3.png" alt="img"/><img src="../img/gallery-img-4.png" alt="img"/><img src="../img/gallery-img-5.png" alt="img"/><img src="../img/gallery-img-6.png" alt="img"/><img src="../img/gallery-img-7.png" alt="img"/><img src="../img/gallery-img-8.png" alt="img"/>
-        </div>
-      </section>
-      <section class="section-bestSellers">
-        <h1>SẢN PHẨM BÁN CHẠY</h1><img src="../img/title-icon.png" alt="img"/>
-        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-1.jpg" alt="img"/>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-2.jpg" alt="img"/>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-3.jpg" alt="img"/>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-4.jpg" alt="img"/>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a>
-        </div>
-      </section>
-      <section class="section-news">
-        <div class="blog">
-          <h1>TIN TỨC VÀ BLOG</h1><img src="../img/title-icon.png" alt="img"/>
-          <div class="wrapper">
-            <div class="news"><img src="../img/blog-1.png" alt="img"/>
-              <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
-              <P class="detail">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
-              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p>
-              <p class="more">Read more</p>
-            </div>
-            <div class="news"><img src="../img/blog-2.png" alt="img"/>
-              <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
-              <P class="detail">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
-              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p>
-              <p class="more">Read more</p>
-            </div>
-          </div>
-        </div>
-        <div class="customer flex-column">
-          <div class="title">
-            <h1>KHÁCH HÀNG</h1><img src="../img/title-icon.png" alt="img"/>
-          </div>
-          <div class="comtent"><img src="../img/customer-circle.png" alt="img"/>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, obcaecati.</p>
-            <p>Read more</p>
-          </div><img src="../img/customer-avatar.png" alt="img"/>
-          <div class="name">
-            <p>GIANG LT</p>
-            <P>Graphic Design</P>
-          </div>
         </div>
       </section>
     </main>

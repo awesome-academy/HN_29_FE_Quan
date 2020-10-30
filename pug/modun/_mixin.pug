@@ -1,6 +1,13 @@
 mixin product(title,link,price,original)
     a(href="#",title=title).product
-        img(src=link, alt="img")
+        .wrapper-popup
+            img(src=link, alt="img")
+            .popup
+                i.fa.fa-heart(aria-hidden='true')
+                span Yêu thích
+                i.fa.fa-bar-chart(aria-hidden='true')
+                span So sánh
+                i.fa.fa-compress(aria-hidden='true')
         h5.title= title
         P.price= price
             sup đ
@@ -54,3 +61,50 @@ mixin side-bar
             img(src="../img/arrow.png", alt="img")
         each item in tag
             button= item
+mixin cart-item(link,name,price,count,total)
+    .cart-item
+        .link.flex-x-y
+            img(src= link, alt="img")
+        .name.flex-x-y
+            p= name
+        .price.flex-x-y
+            p= price
+        .count.flex-x-y
+            p= count
+        .total.flex-x-y
+            p= total
+        .delete.flex-x-y
+            i.fa.fa-trash
+mixin news(link)
+    .news
+        img(src=link, alt="img")
+        h5.title VANG THĂNG LONG CLASSIC
+        P.time Đăng bởi Giang Lê|06/06/2016|60 bình luận
+        p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+        a(href="blog-detail.html").more Read more
+mixin news-detail(link)
+    .news
+        img(src=link, alt="img")
+        h5.title VANG THĂNG LONG CLASSIC
+        P.time Đăng bởi Giang Lê|06/06/2016|60 bình luận
+        p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+mixin comment
+    .comment.flex-column-y
+        .wrapper 
+            p
+                i Bình luận bởi GiangLe
+            p
+                i |Cách đây 4 giờ
+            a(href="#")
+                i Trả lời
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at fuga quibusdam iure laborum, velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam officiis veritatis. Iusto, fugit! Sapiente incidunt voluptates voluptas cumque officia.ducimus sed magni error sit!
+mixin order(number, id, warehouse, count, total, status, act)
+    tr
+        td=number
+        td=id
+        td=warehouse
+        td=count
+        td=total
+        td=status
+        td=act
+

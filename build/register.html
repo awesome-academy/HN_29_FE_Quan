@@ -77,95 +77,49 @@
         </ul>
       </nav>
     </header>
-    <main class="detail">
-      <section class="product-link">
-        <h5>Trang chủ/Sản phẩm/Rượu vang đỏ</h5>
-      </section>
-      <section class="product-detail">
-        <div class="product-detail__wrapper-top">
-          <div class="product-detail__wrapper-top__thumbnail"><img src="../img/product-5.jpg" alt="img"/><img src="../img/product-6.jpg" alt="img"/><img src="../img/product-7.jpg" alt="img"/><img src="../img/product-8.jpg" alt="img"/><img src="../img/product-9.jpg" alt="img"/></div>
-          <div class="product-detail__wrapper-top__large-image"><img src="../img/product-detail-main-img.png" alt="img"/></div>
-          <div class="product-detail__wrapper-top__attribute">
-            <h1>RƯỢU NHO NĂM 1987</h1><img src="../img/arrow.png" alt="img"/>
-            <p class="price">330.000<sup>đ</sup></p>
-            <div class="rate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
-              <hr/>
-            </div>
-            <div class="color">
-              <h3>MÀU SẮC </h3>
-              <div class="square-1"></div>
-              <div class="square-2"></div>
-              <div class="square-3"></div>
-            </div>
-            <div class="size">
-              <h3>KÍCH CỠ</h3>
-              <form>
-                <select id="size" name="size">
-                  <option value="big">Loại lớn</option>
-                  <option value="medium">Loại vừa</option>
-                  <option value="small">Loại nhỏ</option>
-                </select>
-              </form>
-            </div>
-            <div class="count">
-              <h3>SỐ LƯỢNG</h3>
-              <div class="wrapper"><i class="fa fa-plus" aria-hidden="true"></i>
-                <form action="">
-                  <input type="number" id="quantity" name="quantity" min="1"/>
-                </form><i class="fa fa-plus" aria-hidden="true"></i>
-              </div>
-              <button class="btn btn-black" type="submit">ADD TO CART</button>
-            </div>
-            <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích   </span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh   </span><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></div>
-            <div class="description">
-              <h3>MÔ TẢ</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fuga velit optio quo ducimus ratione!</p>
-            </div>
-            <div class="social"></div>
-          </div>
+    <main class="login flex-column-y">
+      <section class="title">
+        <p>Trang chủ/ Đăng ký</p>
+        <div class="wrapper">
+          <h3>ĐĂNG KÝ</h3><img src="../img/arrow.png" alt="img"/>
         </div>
-        <div class="product-detail__wrapper-bottom">
-          <div class="content">
-            <ul class="title">
-              <li><a href="#">ĐẶC ĐIỂM NỔI BẬT</a></li>
-              <li><a href="#">THÔNG TIN SẢN PHẨM</a></li>
-              <li>   <a href="#">ĐÁNH GIÁ</a></li>
-            </ul>
-            <div class="text">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere assumenda a voluptate possimus consequuntur, quisquam commodi asperiores fugiat ea accusamus.elit. Dolorum, porro quis quasi ducimus deleniti sapiente?</p>
+        <button class="btn btn-black">ĐĂNG KÝ</button>
+      </section>
+      <section class="main-content">
+        <h3>THÔNG TIN CÁ NHÂN</h3><br/>
+        <form>
+          <div class="label flex-column-l">
+            <label for="fname">Tên trước<span>*</span></label>
+            <label for="lnam">Tên sau<span>*</span></label>
+            <label for="email">Email<span>*</span></label>
+            <label for="password">Password<span>*</span></label>
+          </div>
+          <div class="input flex-column-l">
+            <input type="text" id="fname" name="fname"/>
+            <input type="text" id="lname" name="lname"/>
+            <input type="text" id="email" name="email"/>
+            <input type="password" id="password" name="password"/>
+            <div class="wrapper">
+              <input type="checkbox" id="check" name="check"/>
+              <label for="check">Đăng ký nhận bản tin</label>
             </div>
           </div>
-          <div class="image"><img src="../img/product-detail-content-img.png" alt="img"/></div>
-        </div>
-      </section>
-      <section class="product-recommend">
-        <h1>SẢN PHẨM LIÊN QUAN</h1><img src="../img/title-icon.png" alt="img"/>
-        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
-                <div class="wrapper-popup"><img src="../img/product-1.jpg" alt="img"/>
-                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
-                </div>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
-                <div class="wrapper-popup"><img src="../img/product-2.jpg" alt="img"/>
-                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
-                </div>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
-                <div class="wrapper-popup"><img src="../img/product-3.jpg" alt="img"/>
-                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
-                </div>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
-                <div class="wrapper-popup"><img src="../img/product-4.jpg" alt="img"/>
-                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
-                </div>
-                <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
-                <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a>
-        </div>
+        </form>
+        <h3>THÔNG TIN ĐĂNG NHẬP</h3><br/>
+        <form>
+          <div class="label flex-column-l">
+            <label for="password">Mật khẩu<span>*</span></label>
+            <label for="repassword">Nhập lại mật khẩu<span>*</span></label>
+          </div>
+          <div class="input flex-column-l">
+            <input type="password" id="password" name="password"/>
+            <input type="password" id="repassword" name="repassword"/>
+            <div class="wrapper-btn">
+              <button class="btn btn-black">GỬI</button>
+              <button class="btn btn-black">QUAY LẠI</button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="flex-column-y">

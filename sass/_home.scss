@@ -95,21 +95,6 @@
     .wrapper {
       display: grid;
       grid-template-columns: 50% 50%;
-      .news {
-        padding: 0rem 1rem;
-        width: 100%;
-        text-align: start;
-        img {
-          width: 100%;
-        }
-        .detail {
-          color: $color-3;
-          font-size: 0.8rem;
-        }
-        .more {
-          color: $color-3;
-        }
-      }
     }
   }
   .customer {
@@ -117,5 +102,31 @@
     > * {
       margin: 1rem 0rem;
     }
+  }
+}
+@media screen and(max-width:600px) {
+  .section-sale {
+    width: 100%;
+  }
+  .section-latest {
+    width: 100%;
+    .wrapper {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  .section-gallery {
+    .wrapper {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  .section-bestSellers {
+    width: 100%;
+    .wrapper {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  .section-news {
+    grid-template-columns: 100%;
+    width: 70%;
   }
 }

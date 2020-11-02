@@ -9,15 +9,15 @@
   </head>
   <body>
     <header>
-      <div class="header__top flex-column">
+      <div class="header__top flex-column-y">
         <nav class="navbar navbar-top">
           <ul class="nav">
-            <li class="nav__item"><a class="nav__link" href="#">Tài khoản của tôi</a></li>
+            <li class="nav__item"><a class="nav__link" href="address.html">Tài khoản của tôi</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Trạng thái đơn hàng</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Danh sách ưa thích</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Giỏ hàng</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Đặng nhập</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Đăng ký</a></li>
+            <li class="nav__item"><a class="nav__link" href="cart.html">Giỏ hàng</a></li>
+            <li class="nav__item"><a class="nav__link" href="login.html">Đặng nhập</a></li>
+            <li class="nav__item"><a class="nav__link" href="register.html">Đăng ký</a></li>
           </ul>
           <form>
             <input type="search" placeholder="Tìm kiếm ở đây"/>
@@ -30,7 +30,7 @@
         <ul class="nav">
           <li class="nav__item"><img src="../img/brand.png" alt="img"/></li>
           <li class="nav__item"><a class="nav__link" href="index.html">Trang chủ</a></li>
-          <li class="nav__item" id="dropdown--1"><a class="nav__link" href="#">Rượu vang đỏ</a>
+          <li class="nav__item" id="dropdown--1"><a class="nav__link" href="product-grid.html">Rượu vang đỏ</a>
             <div class="dropdown-menu">
               <div class="wrapper">
                 <div class="wrapper-item">
@@ -71,26 +71,26 @@
           </li>
           <li class="nav__item"><a class="nav__link" href="#">Rượu vang trắng</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Champagne</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Thông tin</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Liên hệ</a></li>
+          <li class="nav__item"><a class="nav__link" href="introduction.html">Thông tin</a></li>
+          <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Liên hệ</a></li>
         </ul>
       </nav>
     </header>
-    <main class="flex-column">
-      <section class="section-intro flex-column">
+    <main class="flex-column-y">
+      <section class="section-intro flex-column-y">
         <div class="title">
           <h1>GIỚI THIỆU</h1><img src="../img/title-icon.png" alt="img"/>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quisquam sint dolores debitis ad doloremque excepturi accusantium, laudantium cum totam laborum, aperiam perspiciatis quod omnis eveniet ipsum. Quidem ducimus animi minima amet, at dolor quos esse rem expedita omnis cum assumenda accusamus aliquid nobis aliquam nostrum odio est, repellat quas? Eius commodi hic quae maxime voluptatum quibusdam. Ipsam voluptas sit perspiciatis dolore dignissimos! Sequi, aspernatur saepe reprehenderit asperiores autem corporis quae nobis esse sapiente cum adipisci</p>
         <button class="btn-black btn" type="submit">Xem thêm</button>
       </section>
-      <section class="section-sale flex-column">
-        <div class="section-sale__content flex-column">
-          <div class="wrapper flex-row"><img src="../img/home-page-sale-product.png" alt="img"/>
+      <section class="section-sale flex-column-y">
+        <div class="section-sale__content flex-column-y">
+          <div class="wrapper flex-x-y"><img src="../img/home-page-sale-product.png" alt="img"/>
             <div id="triangle-topleft"></div>
             <h5>sale</h5>
-            <div class="product-detail flex-column">
+            <div class="product-detail flex-column-y">
               <div class="title">
                 <h1>Rượu nho năm 1987</h1><img src="../img/arrow.png" alt="img"/>
               </div>
@@ -103,16 +103,28 @@
       </section>
       <section class="section-latest">
         <h1>SẢN PHẨM MỚI</h1><img src="../img/title-icon.png" alt="img"/>
-        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-1.jpg" alt="img"/>
+        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-1.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-2.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-2.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-3.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-3.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-4.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-4.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
                 <button class="btn btn-black" type="submit">ADD TO CART</button></a>
@@ -124,16 +136,28 @@
       </section>
       <section class="section-bestSellers">
         <h1>SẢN PHẨM BÁN CHẠY</h1><img src="../img/title-icon.png" alt="img"/>
-        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-1.jpg" alt="img"/>
+        <div class="wrapper"><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-1.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-2.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-2.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-3.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-3.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">370.000<sup>đ</sup><span class="original">480.000<sup>đ</sup></span></P>
-                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT"><img src="../img/product-4.jpg" alt="img"/>
+                <button class="btn btn-black" type="submit">ADD TO CART</button></a><a class="product" href="#" title="RƯỢU VANG ĐÀ LẠT">
+                <div class="wrapper-popup"><img src="../img/product-4.jpg" alt="img"/>
+                  <div class="popup"><i class="fa fa-heart" aria-hidden="true"></i><span>Yêu thích</span><i class="fa fa-bar-chart" aria-hidden="true"></i><span>So sánh</span><i class="fa fa-compress" aria-hidden="true"></i></div>
+                </div>
                 <h5 class="title">RƯỢU VANG ĐÀ LẠT</h5>
                 <P class="price">350.000<sup>đ</sup><span class="original">500.000<sup>đ</sup></span></P>
                 <button class="btn btn-black" type="submit">ADD TO CART</button></a>
@@ -143,21 +167,19 @@
         <div class="blog">
           <h1>TIN TỨC VÀ BLOG</h1><img src="../img/title-icon.png" alt="img"/>
           <div class="wrapper">
-            <div class="news"><img src="../img/blog-1.png" alt="img"/>
-              <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
-              <P class="detail">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
-              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p>
-              <p class="more">Read more</p>
-            </div>
-            <div class="news"><img src="../img/blog-2.png" alt="img"/>
-              <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
-              <P class="detail">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
-              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p>
-              <p class="more">Read more</p>
-            </div>
+                <div class="news"><img src="../img/blog-1.png" alt="img"/>
+                  <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
+                  <P class="time">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
+                  <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p><a class="more" href="blog-detail.html">Read more</a>
+                </div>
+                <div class="news"><img src="../img/blog-2.png" alt="img"/>
+                  <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
+                  <P class="time">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
+                  <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p><a class="more" href="blog-detail.html">Read more</a>
+                </div>
           </div>
         </div>
-        <div class="customer flex-column">
+        <div class="customer flex-column-y">
           <div class="title">
             <h1>KHÁCH HÀNG</h1><img src="../img/title-icon.png" alt="img"/>
           </div>
@@ -172,7 +194,7 @@
         </div>
       </section>
     </main>
-    <footer class="flex-column">
+    <footer class="flex-column-y">
       <div class="brand"><img src="../img/footer-img.png" alt="img"/></div>
       <div class="contacts">
         <div class="contact__1">

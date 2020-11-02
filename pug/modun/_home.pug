@@ -1,17 +1,17 @@
-main.flex-column
-    section.section-intro.flex-column
+main.flex-column-y
+    section.section-intro.flex-column-y
         .title
             h1 GIỚI THIỆU
             img(src="../img/title-icon.png", alt="img")
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quisquam sint dolores debitis ad doloremque excepturi accusantium, laudantium cum totam laborum, aperiam perspiciatis quod omnis eveniet ipsum. Quidem ducimus animi minima amet, at dolor quos esse rem expedita omnis cum assumenda accusamus aliquid nobis aliquam nostrum odio est, repellat quas? Eius commodi hic quae maxime voluptatum quibusdam. Ipsam voluptas sit perspiciatis dolore dignissimos! Sequi, aspernatur saepe reprehenderit asperiores autem corporis quae nobis esse sapiente cum adipisci
         button.btn-black.btn(type="submit") Xem thêm
-    section.section-sale.flex-column
-        .section-sale__content.flex-column
-            .wrapper.flex-row
+    section.section-sale.flex-column-y
+        .section-sale__content.flex-column-y
+            .wrapper.flex-x-y
                 img(src="../img/home-page-sale-product.png", alt="img")
                 #triangle-topleft
                 h5 sale
-                .product-detail.flex-column
+                .product-detail.flex-column-y
                     .title
                         h1 Rượu nho năm 1987
                         img(src="../img/arrow.png", alt="img")
@@ -42,19 +42,9 @@ main.flex-column
             h1 TIN TỨC VÀ BLOG
             img(src="../img/title-icon.png", alt="img")
             .wrapper
-                .news
-                    img(src="../img/blog-1.png", alt="img")
-                    h5.title VANG THĂNG LONG CLASSIC
-                    P.detail Đăng bởi Giang Lê|06/06/2016|60 bình luận
-                    p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
-                    p.more Read more
-                .news
-                    img(src="../img/blog-2.png", alt="img")
-                    h5.title VANG THĂNG LONG CLASSIC
-                    P.detail Đăng bởi Giang Lê|06/06/2016|60 bình luận
-                    p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
-                    p.more Read more
-        .customer.flex-column
+                +news('../img/blog-1.png')
+                +news('../img/blog-2.png')
+        .customer.flex-column-y
             .title
                 h1 KHÁCH HÀNG
                 img(src="../img/title-icon.png", alt="img")
